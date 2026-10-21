@@ -1013,7 +1013,7 @@ elif modulo == "🏢 3. Proveedores y Catálogos (Editable)":
 
         if busq_prv.strip():
             q_p = busq_prv.strip().lower()
-            df_pro_ filtered = df_pro_edit[
+            df_pro_filtered = df_pro_edit[
                 df_pro_edit["nombre_comercial"].str.lower().str.contains(q_p, na=False) |
                 df_pro_edit["cedula"].str.lower().str.contains(q_p, na=False) |
                 df_pro_edit["segmento"].str.lower().str.contains(q_p, na=False)
